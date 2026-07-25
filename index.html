@@ -5,8 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Gaelainn">
 <meta name="theme-color" content="#f4ece0">
 <title>Gaelainn — Corca Dhuibhne</title>
+
+<!-- Home-screen install. Without apple-touch-icon iOS uses a page screenshot. -->
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png">
+<link rel="manifest" href="manifest.json">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +20,7 @@
 
 <!-- ?v= is a cache-buster. Bump it on every deploy, or returning learners get
      stale JS against new HTML and the app silently half-loads. -->
-<link rel="stylesheet" href="css/style.css?v=2">
+<link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
 
@@ -44,15 +50,15 @@
 </div>
 
 <!-- Data first, then engine layers, then modules, then boot. -->
-<script src="data/cards.js?v=2"></script>
-<script src="js/store.js?v=2"></script>
-<script src="js/engine.js?v=2"></script>
-<script src="js/fuaim.js?v=2"></script>
-<script src="js/ui.js?v=2"></script>
-<script src="js/flashcards.js?v=2"></script>
-<script src="js/minigh.js?v=2"></script>
-<script src="js/dashboard.js?v=2"></script>
-<script src="js/app.js?v=2"></script>
+<script src="data/cards.js?v=3"></script>
+<script src="js/store.js?v=3"></script>
+<script src="js/engine.js?v=3"></script>
+<script src="js/fuaim.js?v=3"></script>
+<script src="js/ui.js?v=3"></script>
+<script src="js/flashcards.js?v=3"></script>
+<script src="js/minigh.js?v=3"></script>
+<script src="js/dashboard.js?v=3"></script>
+<script src="js/app.js?v=3"></script>
 
 </body>
 </html>

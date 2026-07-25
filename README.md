@@ -6,15 +6,27 @@ rather than fixed decks and grammar drills. Munster Irish, Corca Dhuibhne variet
 **The seed content is placeholder and unreviewed.** It is not to go near learners
 until every phrase has been checked. See *Content review* below.
 
-## Running it
+## Where it lives
 
-Open `index.html`. No build, no server, no dependencies.
+**https://spooncats.github.io/gaelainn/** — repo `spooncats/gaelainn`, Pages
+served from `main` at the root, same shape as Hafıza.
 
-For GitHub Pages: push this folder to a repo, enable Pages on the branch, done —
-same shape as Hafıza. Note that the Google Fonts link needs a network connection;
-without one it falls back to Georgia and a narrow sans, which is legible but not
-the house style. If you want it fully offline on the iPad like Hafıza, swap the
-`<link>` in `index.html` for base64-embedded woff2 files.
+On the iPad: open that URL in Safari, then Share → *Add to Home Screen*. It opens
+full-screen with its own icon, no browser chrome, and works the same as any app
+on the dock. Recording needs that https URL — it will not work from a file opened
+off the disk.
+
+Locally, `index.html` opens directly with no build, no server, no dependencies —
+but microphone recording is disabled in that mode.
+
+The Google Fonts link needs a network connection. Without one it falls back to
+Georgia and a narrow sans: legible, not the house style. If you want it fully
+offline on the iPad like Hafıza, swap the `<link>` in `index.html` for
+base64-embedded woff2 files.
+
+**The repo is public.** GitHub Pages requires that on a free account, and Hafıza
+is public too, so this matches. It does mean the unreviewed seed phrases are
+world-readable under your name until you review them.
 
 ## Layout
 

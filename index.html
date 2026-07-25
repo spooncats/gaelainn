@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ga">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#f4ece0">
+<title>Gaelainn — Corca Dhuibhne</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+<!-- ?v= is a cache-buster. Bump it on every deploy, or returning learners get
+     stale JS against new HTML and the app silently half-loads. -->
+<link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+
+<div class="frame">
+
+  <header class="masthead">
+    <div class="kicker">GAEILGE CHORCA DHUIBHNE</div>
+    <h1>Gaelainn</h1>
+    <div class="sub">téamaí, gramadach agus na lagphointí</div>
+    <div class="status-line" id="statusLine"></div>
+  </header>
+
+  <nav class="nav">
+    <button id="nav-flashcards">CÁRTAÍ</button>
+    <button id="nav-minigh">MÍNIGH É</button>
+    <button id="nav-dashboard">LAGPHOINTÍ</button>
+  </nav>
+
+  <section class="screen" id="screen-flashcards"></section>
+  <section class="screen" id="screen-minigh"></section>
+  <section class="screen" id="screen-dashboard"></section>
+
+  <footer>
+    Progress and recordings are saved in this browser only.
+  </footer>
+
+</div>
+
+<!-- Data first, then engine layers, then modules, then boot. -->
+<script src="data/cards.js?v=2"></script>
+<script src="js/store.js?v=2"></script>
+<script src="js/engine.js?v=2"></script>
+<script src="js/fuaim.js?v=2"></script>
+<script src="js/ui.js?v=2"></script>
+<script src="js/flashcards.js?v=2"></script>
+<script src="js/minigh.js?v=2"></script>
+<script src="js/dashboard.js?v=2"></script>
+<script src="js/app.js?v=2"></script>
+
+</body>
+</html>
